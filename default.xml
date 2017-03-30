@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch=".."
-           review="review.cyanogenmod.org" />
-
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.1_r6" />
+           revision="refs/tags/android-5.1.1_r37" />
 
+  <remote  name="github"
+           fetch="https://github.com/CyanogenMod"
+           review="review.cyanogenmod.org" />
+  
+  <remote  name="own"
+           fetch="https://github.com/vikisaint91"
+           revision="refs/heads/nanopi2-lollipop-mr1" />    
+  
+  <remote  name="origin"
+           fetch="https://github.com/friendlyarm"
+           revision="refs/heads/s5p4418-lollipop-mr1" />
+  
   <default revision="refs/heads/cm-14.1"
-           remote="github"
+           remote="own"
            sync-c="true"
            sync-j="4" />
 
